@@ -201,7 +201,7 @@
                         <span>Dubai Marina, UAE</span>
                     </div>
                 </div>
-                <a href="/contact" class="inline-block mt-6 px-8 py-3 bg-white text-[#203e78] font-semibold text-base rounded-full shadow-lg hover:bg-[#36a3dc] hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#36a3dc]/50 transition-all duration-300 relative z-10 animate-pulse-cta">Contact Us</a>
+                <a href="#" class="inline-block mt-6 px-8 py-3 bg-white text-[#203e78] font-semibold text-base rounded-full shadow-lg hover:bg-[#36a3dc] hover:text-white hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#36a3dc]/50 transition-all duration-300 relative z-10 animate-pulse-cta">Contact Us</a>
             </div>
         </div>
     </section>

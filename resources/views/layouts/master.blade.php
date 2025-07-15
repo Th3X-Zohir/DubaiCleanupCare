@@ -260,7 +260,7 @@
                     <li><a href="/services" class="hover:text-[#36a3dc] transition-colors duration-300">Services</a></li>
                     <li><a href="/about" class="hover:text-[#36a3dc] transition-colors duration-300">About Us</a></li>
                     <li><a href="/booking" class="hover:text-[#36a3dc] transition-colors duration-300">Book Now</a></li>
-                    <li><a href="/contact" class="hover:text-[#36a3dc] transition-colors duration-300">Contact</a></li>
+                    
                 </ul>
             </div>
             <!-- Contact Info -->
