@@ -147,7 +147,7 @@
                         </div>
                         <div class="flex-1">
                             <h3 class="text-lg font-semibold text-[#203e78] mb-2">9. Privacy Policy</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed">Please review our <a href="/privacy" class="text-[#36a3dc] hover:underline">Privacy Policy</a> for information on how we collect, use, and protect your personal data.</p>
+                            <p class="text-gray-600 text-sm leading-relaxed">Please review our <a href="#" class="text-[#36a3dc] hover:underline">Privacy Policy</a> for information on how we collect, use, and protect your personal data.</p>
                         </div>
                     </div>
                     <div class="tooltip absolute bg-white/90 text-[#203e78] text-xs p-2 rounded-md shadow-lg opacity-0 pointer-events-none transition-opacity duration-300">Our privacy commitment</div>
