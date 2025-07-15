@@ -236,7 +236,7 @@
                 <a href="/" class="relative group hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] rounded -ml-4" aria-label="Homepage">
                     <img src="/assets/logo/logoblack.png" alt="Dubai Cleanup & Maintenance Logo" class="w-40 h-auto">
                 </a>
-                <p class="text-sm leading-relaxed">test spaces with world-class cleaning and maintenance services across Dubai since 2010.</p>
+                <p class="text-sm leading-relaxed">Transforming spaces with world-class cleaning and maintenance services across Dubai since 2010.</p>
                 <div class="flex space-x-4">
                     <a href="#" class="hover:bg-[#36a3dc] p-2 rounded-full transition-colors duration-300" aria-label="Twitter">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.6c-.9.4-1.8.7-2.8.8 1-.6 1.8-1.6 2.2-2.7-.9.6-2 1-3.1 1.2-1.9-2-5-2.6-7.6-.8-1.4 1-2.2 2.6-2.1 4.3-3.6-.2-6.9-1.9-9-4.7-.4.7-.6 1.5-.6 2.4 0 1.7.8 3.1 2.1 4-.8 0-1.6-.2-2.3-.6v.1c0 2.3 1.6 4.3 3.8 4.7-.7.2-1.4.3-2.1.3-.5 0-1 0-1.5-.1 1 3.2 3.9 5.5 7.3 5.6-2.7 2.1-6.1 3.3-9.8 3.3-.6 0-1.3 0-1.9-.1 3.5 2.3 7.7 3.6 12.2 3.6 14.6 0 22.6-12.1 22.6-22.6 0-.3 0-.7-.1-1 .6-.4 1.2-.9 1.7-1.5z"/></svg>
