@@ -1,14 +1,27 @@
-
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@yield('title', 'Dubai Cleanup & Maintenance')</title>
-    <link rel="icon" type="image/png" href="/assets/logo/favicon.png">
-    <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>@yield('title', 'Best Cleaning Services in Dubai | Eco-Friendly Home & Office Cleaning - Dubai Cleanup & Maintenance')</title>
+        <link rel="icon" type="image/png" href="https://www.dubaicleanupcare.com/assets/logo/logo.png">
+        <meta name="description" content="Discover top-rated cleaning services in Dubai. Eco-friendly, affordable, and reliable home & office cleaning in Dubai Marina, JBR, and beyond. Book same-day service now for spotless results." />
+        <meta name="keywords" content="cleaning services Dubai, deep cleaning Dubai, home cleaning Dubai, office cleaning Dubai, eco-friendly cleaning UAE, maintenance services Dubai" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.dubaicleanupcare.com/" />
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.dubaicleanupcare.com/" />
+        <meta property="og:title" content="Best Cleaning Services in Dubai | Dubai Cleanup & Maintenance" />
+        <meta property="og:description" content="Transform your space with expert, eco-friendly cleaning and maintenance services in Dubai. Trusted by 5000+ homes for spotless results and flexible booking." />
+        <meta property="og:image" content="https://www.dubaicleanupcare.com/assets/logo/logo.png" />
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Best Cleaning Services in Dubai | Dubai Cleanup & Maintenance" />
+        <meta name="twitter:description" content="Transform your space with expert, eco-friendly cleaning and maintenance services in Dubai. Trusted by 5000+ homes for spotless results and flexible booking." />
+        <meta name="twitter:image" content="https://www.dubaicleanupcare.com/assets/logo/logo.png" />
+        <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    </head>
     <style>
         /* Custom subtle scrollbar */
         ::-webkit-scrollbar {
