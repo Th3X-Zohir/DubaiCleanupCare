@@ -193,7 +193,7 @@
             </svg>
         </div>
         <div class="relative max-w-[1600px] mx-auto">
-            <h3 class="text-4xl md:text-5xl font-bold text-center text-[#203e78] mb-4 animate-fade-in-up">Our Premium Services</h3>
+            <h3 class="text-4xl md:text-5xl font-bold text-center text-[#203e78] mb-4 animate-fade-in-up">Our Premium Service</h3>
             <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">Discover our world-class cleaning and maintenance solutions tailored for Dubai’s finest homes and businesses.</p>
             <!-- Search Bar -->
             <div class="relative max-w-md mx-auto mb-8">
