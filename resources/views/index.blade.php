@@ -129,7 +129,7 @@
 
     <!-- Content -->
     <div class="relative max-w-7xl mx-auto text-center content-container" style="z-index: 10;">
-        <h2 id="slider-title" class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight animate-slide-in" style="font-family: 'Inter', sans-serif; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">{{ $sliders->first()->title ?? '5000+ Homes Sparkling Clean' }}</h2>
+        <h2 id="slider-title" class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight animate-slide-in" style="font-family: 'Inter', sans-serif; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);">{{ $sliders->first()->title ?? '7000+ Homes Sparkling Clean' }}</h2>
         <p id="slider-description" class="mt-6 text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto animate-slide-in" style="font-family: 'Inter', sans-serif; line-height: 1.8; animation-delay: 0.2s;">{{ $sliders->first()->short_description ?? 'Transforming spaces in Dubai Marina, JBR, and beyond with world-class cleaning and maintenance.' }}</p>
         <div class="mt-10 flex justify-center gap-6 animate-slide-in" style="animation-delay: 0.4s;">
             <a href="/booking" class="gradient-btn inline-block px-10 py-4 rounded-xl text-white font-semibold text-lg tracking-wide animate-pulse" style="font-family: 'Inter', sans-serif; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);">Book Now</a>
