@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYMENT_PATH=/home/dubaicleanupcare/public_html
+    - /bin/git fetch origin main
+    - /bin/git reset --hard origin/main
+    - /bin/chmod -R 755 $DEPLOYMENT_PATH
+    - /bin/chown -R dubaicleanupcare:dubaicleanupcare $DEPLOYMENT_PATH
+    - /usr/local/bin/php $DEPLOYMENT_PATH/artisan optimize:clear
+    - /usr/local/bin/php $DEPLOYMENT_PATH/artisan config:cache
+    - /usr/local/bin/php $DEPLOYMENT_PATH/artisan route:cache
+    - /usr/local/bin/php $DEPLOYMENT_PATH/artisan view:cache
