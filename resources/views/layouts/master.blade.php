@@ -309,7 +309,7 @@
         <div class="border-t border-white/20 pt-6 text-center">
             <p class="text-sm">© {{ date('Y') }} Dubai Cleanup & Maintenance. All rights reserved.</p>
             <div class="mt-2 space-x-4 text-sm">
-                <a href="/privacy" class="hover:text-[#36a3dc] transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-[#36a3dc] transition-colors duration-300">Privacy Policy</a>
                 <span>|</span>
                 <a href="/terms" class="hover:text-[#36a3dc] transition-colors duration-300">Terms of Service</a>
             </div>
