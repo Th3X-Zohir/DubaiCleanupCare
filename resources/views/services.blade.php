@@ -117,8 +117,6 @@
                             <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-40 transition-opacity duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
                                 <div class="text-center text-white">
                                     <span class="font-semibold text-lg">Explore {{ $service->title }}</span>
-                                    <p class="text-sm mt-2">Rating: {{ $service->reviews->avg('rating') ?? 'N/A' }}/5</p>
-                                    <p class="text-sm">Starting at AED {{ rand(100, 500) }}</p>
                                 </div>
                             </div>
                         </div>
