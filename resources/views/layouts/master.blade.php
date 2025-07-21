@@ -7,6 +7,44 @@
         <meta name="keywords" content="cleaning services Dubai, deep cleaning Dubai, home cleaning Dubai, office cleaning Dubai, eco-friendly cleaning UAE, maintenance services Dubai" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.dubaicleanupcare.com/" />
+        <!-- Organization & Website Schema for sitelinks -->
+        <!-- Organization Schema -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dubai Cleanup & Maintenance",
+        "url": "https://www.dubaicleanupcare.com",
+        "logo": "https://www.dubaicleanupcare.com/assets/logo/logo.png",
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "telephone": "+971123456789",
+            "contactType": "customer service",
+            "areaServed": "AE"
+        }],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Al Quoz Industrial Area",
+            "addressLocality": "Dubai",
+            "addressCountry": "UAE"
+        }
+        }
+        </script>
+
+        <!-- WebSite Schema -->
+        <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.dubaicleanupcare.com/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.dubaicleanupcare.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+        }
+        </script>
+
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.dubaicleanupcare.com/" />
