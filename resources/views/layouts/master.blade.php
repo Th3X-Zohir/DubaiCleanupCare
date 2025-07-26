@@ -18,7 +18,7 @@
         "logo": "https://www.dubaicleanupcare.com/assets/logo/logo.png",
         "contactPoint": [{
             "@type": "ContactPoint",
-            "telephone": "+971123456789",
+            "telephone": "+971522515407",
             "contactType": "customer service",
             "areaServed": "AE"
         }],
@@ -117,6 +117,17 @@
 
 <!-- Header -->
     <header class="bg-gradient-to-r from-white to-[#f8fafc] backdrop-blur-2xl shadow-[0_4px_20px_rgba(54,163,220,0.1)] sticky top-0 z-50 border-b border-[#36a3dc]/10">
+                <!-- Topbar with Phone Number -->
+        <div style="background: linear-gradient(135deg, rgba(54, 163, 220, 0.1), rgba(43, 140, 196, 0.15)); padding: 12px 0; border-bottom: 1px solid rgba(54, 163, 220, 0.3); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);">
+            <div style="max-width: 1280px; margin: 0 auto; padding: 0 16px; display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <a href="tel:+971522515407" style="display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(to right, #36a3dc, #2b8cc4); color: white; font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 14px; text-decoration: none; padding: 8px 16px; border-radius: 20px; transition: all 0.3s ease; transform: translateY(0); box-shadow: 0 4px 12px rgba(54, 163, 220, 0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(54, 163, 220, 0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(54, 163, 220, 0.3)';">
+                    <svg style="width: 18px; height: 18px; fill: none; stroke: white; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;" viewBox="0 0 24 24">
+                        <path d="M3 5h12a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2zm9 4l4 4-4 4m-4-4h8"/>
+                    </svg>
+                    <span style="letter-spacing: 0.5px;">Call +971 522 515 407</span>
+                </a>
+            </div>
+        </div>
         <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
             <!-- Logo -->
             <a href="/" class="relative group hover:scale-105 transition-transform duration-300 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] rounded" aria-label="Homepage">
@@ -328,7 +339,7 @@
                     </li>
                     <li class="flex items-center">
                         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2zm9 4l4 4-4 4m-4-4h8"/></svg>
-                        <a href="tel:+971123456789" class="hover:text-[#36a3dc] transition-colors duration-300">+971 12 345 6789</a>
+                        <a href="tel:+971123456789" class="hover:text-[#36a3dc] transition-colors duration-300">+971522515407</a>
                     </li>
                 </ul>
             </div>
