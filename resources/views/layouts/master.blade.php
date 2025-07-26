@@ -277,7 +277,7 @@
         </svg>
         <span class="text-xs font-bold mt-1 group-hover:text-[#ffd700] transition-colors duration-300 relative z-10">Call</span>
     </a>
-    <a href="https://wa.me/+971525881279" target="_blank" class="group flex flex-col items-center text-white hover:scale-115 transition-all duration-300 ease-in-out relative" aria-label="WhatsApp">
+    <a href="https://wa.me/+971522515407" target="_blank" class="group flex flex-col items-center text-white hover:scale-115 transition-all duration-300 ease-in-out relative" aria-label="WhatsApp">
         <div class="absolute inset-0 bg-white/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         <svg class="w-7 h-7 fill-[#ffffff] group-hover:fill-[#20b358] transition-colors duration-300 relative z-10" viewBox="0 0 24 24">
             <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.33.27 2.59.75 3.72L1.5 22l6.42-1.35c1.13.48 2.39.75 3.72.75 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.17c-1.16 0-2.29-.22-3.36-.64l-.24-.13-3.8.8.81-3.71-.15-.25c-.47-1.1-.73-2.29-.73-3.55 0-4.76 3.88-8.64 8.64-8.64s8.64 3.88 8.64 8.64-3.88 8.64-8.64 8.64zm4.92-6.44c-.27-.14-1.61-.8-1.86-.89-.24-.09-.42-.14-.61.14-.18.27-.7.89-.86 1.07-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.44-.45-.61-.45-.16 0-.34-.02-.52-.02s-.48.07-.73.34c-.24.27-.94.91-.94 2.22s.96 2.58 1.09 2.76c.14.18 1.88 2.88 4.56 4.04.64.27 1.13.43 1.52.55.64.2 1.22.18 1.68.11.51-.08 1.61-.66 1.84-1.29.22-.64.22-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/>
@@ -293,7 +293,7 @@
     </a>
 </div>
 <!-- WhatsApp Floating Button (Desktop Only) -->
-<a href="https://wa.me/+971525881279" target="_blank" class="hidden md:flex fixed bottom-8 right-8 bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 animate-pulse z-50" aria-label="Chat on WhatsApp">
+<a href="https://wa.me/+971522515407" target="_blank" class="hidden md:flex fixed bottom-8 right-8 bg-gradient-to-br from-[#25D366] to-[#128C7E] text-white p-4 rounded-full shadow-lg hover:scale-110 transition-all duration-300 animate-pulse z-50" aria-label="Chat on WhatsApp">
     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.33.27 2.59.75 3.72L1.5 22l6.42-1.35c1.13.48 2.39.75 3.72.75 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.17c-1.16 0-2.29-.22-3.36-.64l-.24-.13-3.8.8.81-3.71-.15-.25c-.47-1.1-.73-2.29-.73-3.55 0-4.76 3.88-8.64 8.64-8.64s8.64 3.88 8.64 8.64-3.88 8.64-8.64 8.64zm4.92-6.44c-.27-.14-1.61-.8-1.86-.89-.24-.09-.42-.14-.61.14-.18.27-.7.89-.86 1.07-.16.18-.32.2-.59.07-.27-.14-1.14-.42-2.17-1.34-.8-.71-1.34-1.59-1.5-1.86-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.48-.84-2.03-.22-.53-.44-.45-.61-.45-.16 0-.34-.02-.52-.02s-.48.07-.73.34c-.24.27-.94.91-.94 2.22s.96 2.58 1.09 2.76c.14.18 1.88 2.88 4.56 4.04.64.27 1.13.43 1.52.55.64.2 1.22.18 1.68.11.51-.08 1.61-.66 1.84-1.29.22-.64.22-1.18.16-1.29-.07-.11-.25-.18-.52-.32z"/>
     </svg>

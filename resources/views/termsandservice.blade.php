@@ -194,7 +194,7 @@
                     </div>
                     <div class="flex items-center justify-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12a2 2 0 012 2v12a2 2 0 01-2 2H3a2 2 0 01-2-2V7a2 2 0 012-2zm9 4l4 4-4 4m-4-4h8"/></svg>
-                        <a href="tel:+971525881279" class="hover:underline hover:text-white">+971 52 588 1279</a>
+                        <a href="tel:+971522515407" class="hover:underline hover:text-white">+971 52 588 1279</a>
                     </div>
                     <div class="flex items-center justify-center space-x-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l9-6 9 6v12a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg>

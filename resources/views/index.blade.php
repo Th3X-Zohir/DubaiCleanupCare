@@ -285,12 +285,11 @@
 <!-- Testimonials -->
     
     <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 bg-[#36a3dc] text-white p-3 rounded-full shadow-lg hover:bg-[#203e78] transition-colors duration-300 hidden" aria-label="Back to Top">
+    <button id="back-to-top" class="fixed right-8 bg-[#36a3dc] text-white p-3 rounded-full shadow-lg hover:bg-[#203e78] transition-colors duration-300 hidden" aria-label="Back to Top" style="bottom: 80px;">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
         </svg>
     </button>
-
     <!-- Quick Quote Widget (Sticky Bottom Bar on Mobile) -->
     <!-- <div class="fixed bottom-0 left-0 right-0 bg-[#203e78] text-white p-4 md:hidden">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
