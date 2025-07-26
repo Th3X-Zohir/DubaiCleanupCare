@@ -210,7 +210,7 @@
         <!-- Services Grid -->
         <div id="servicesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
             @foreach($services as $service)
-                <div class="service-card {{ $service->type === 'Cleaning' ? 'cleaning' : 'maintenance' }} bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 {{ $service->type !== 'Cleaning' ? 'hidden' : '' }} w-full" style="animation-delay: {{ $loop->index * 0.1 }}s;" data-title="{{ $service->title }}" data-description="{{ $service->description }}">
+                <a href="/services/{{ $service->id }}" class="service-card {{ $service->type === 'Cleaning' ? 'cleaning' : 'maintenance' }} bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 {{ $service->type !== 'Cleaning' ? 'hidden' : '' }} w-full block" style="animation-delay: {{ $loop->index * 0.1 }}s;" data-title="{{ $service->title }}" data-description="{{ $service->description }}">
                     <div class="relative h-80">
                         @if($service->image)
                             <img src="/storage/{{ $service->image }}" class="w-full h-full object-cover" alt="{{ $service->title }}">
@@ -228,9 +228,9 @@
                     <div class="p-6">
                         <h4 class="text-xl font-semibold text-[#203e78] mb-2">{{ $service->title }}</h4>
                         <p class="text-gray-600 text-sm" style="line-height: 1.6;">{{ Str::limit($service->description, 80) }}</p>
-                        <a href="/services/{{ $service->id }}" class="inline-block mt-4 px-4 py-2 bg-[#36a3dc] text-white font-semibold text-sm rounded-lg hover:bg-[#2b8cc4] transition-all duration-300">View Details</a>
+                        <span class="inline-block mt-4 px-4 py-2 bg-[#36a3dc] text-white font-semibold text-sm rounded-lg hover:bg-[#2b8cc4] transition-all duration-300">View Details</span>
                     </div>
-                </div>
+                </a>
             @endforeach
         </div>
         <div class="text-center mt-12">
