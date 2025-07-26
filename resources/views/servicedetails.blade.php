@@ -3,6 +3,13 @@
 @section('title', $service->title . ' | Dubai Cleanup & Maintenance')
 
 @section('full-width-content')
+    @php
+        $whatsapp_number = '+971522515407';
+        $message = "Hello, I would like to book the " . $service->title . " service.";
+        $encoded_message = urlencode($message);
+        $whatsapp_url = "whatsapp://send?phone={$whatsapp_number}&text={$encoded_message}";
+        $fallback_url = "https://wa.me/{$whatsapp_number}?text={$encoded_message}";
+    @endphp
     <section class="py-20 px-4 sm:px-6 lg:px-8 relative bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] overflow-hidden" role="region" aria-label="Service Details">
         <!-- Background Wave -->
         <div class="absolute inset-0 opacity-10 pointer-events-none">
@@ -30,7 +37,7 @@
                     <h2 class="text-4xl md:text-5xl font-bold text-[#203e78] mb-4">{{ $service->title }}</h2>
                     <p class="text-lg text-gray-600 mb-6" style="line-height: 1.8;">{{ $service->description }}</p>
                     <p class="text-md text-gray-500 mb-8">Service Type: <span class="font-semibold text-[#36a3dc]">{{ $service->type }}</span></p>
-                    <a href="/booking" class="gradient-btn inline-block px-8 py-4 text-white font-semibold text-lg rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300">Book This Service</a>
+                    <a href="{{ $whatsapp_url }}" onclick="window.open('{{ $fallback_url }}', '_blank'); return !window.WhatsApp;" class="gradient-btn inline-block px-8 py-4 text-white font-semibold text-lg rounded-full shadow-lg focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300">Book This Service</a>
                 </div>
             </div>
 

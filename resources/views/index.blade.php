@@ -186,57 +186,58 @@
 
     <!-- Services Grid -->
     <section class="px-4 sm:px-6 lg:px-8 mb-12 relative bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] overflow-hidden" role="region" aria-label="Services Section" id="services">
-        <!-- Background Wave -->
-        <div class="absolute inset-0 opacity-10 pointer-events-none">
-            <svg class="w-full h-full" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#36a3dc" fill-opacity="0.2" d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,202.7C672,213,768,202,864,186.7C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    <!-- Background Wave -->
+    <div class="absolute inset-0 opacity-10 pointer-events-none">
+        <svg class="w-full h-full" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#36a3dc" fill-opacity="0.2" d="M0,192L48,181.3C96,171,192,149,288,154.7C384,160,480,192,576,202.7C672,213,768,202,864,186.7C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </div>
+    <div class="relative max-w-[1600px] mx-auto">
+        <h3 class="text-4xl md:text-5xl font-bold text-center text-[#203e78] mb-4 animate-fade-in-up">Our Premium Services</h3>
+        <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">Discover our world-class cleaning and maintenance solutions tailored for Dubai’s finest homes and businesses.</p>
+        <!-- Search Bar -->
+        <div class="relative max-w-md mx-auto mb-8">
+            <input type="text" id="serviceSearch" class="w-full px-4 py-3 rounded-full shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300" placeholder="Search services..." oninput="searchServices()">
+            <svg class="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
         </div>
-        <div class="relative max-w-[1600px] mx-auto">
-            <h3 class="text-4xl md:text-5xl font-bold text-center text-[#203e78] mb-4 animate-fade-in-up">Our Premium Services</h3>
-            <p class="text-lg text-gray-600 text-center max-w-2xl mx-auto mb-8 animate-fade-in-up" style="animation-delay: 0.2s;">Discover our world-class cleaning and maintenance solutions tailored for Dubai’s finest homes and businesses.</p>
-            <!-- Search Bar -->
-            <div class="relative max-w-md mx-auto mb-8">
-                <input type="text" id="serviceSearch" class="w-full px-4 py-3 rounded-full shadow-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300" placeholder="Search services..." oninput="searchServices()">
-                <svg class="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-            </div>
-            <!-- Tabs -->
-            <div class="flex justify-center mb-8 space-x-4" role="tablist">
-                <button id="cleaningTab" class="px-8 py-3 text-lg font-semibold text-[#203e78] bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300" role="tab" aria-selected="true" aria-controls="cleaning-panel">Cleaning</button>
-                <button id="maintenanceTab" class="px-8 py-3 text-lg font-semibold text-[#203e78] bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300" role="tab" aria-selected="false" aria-controls="maintenance-panel">Maintenance</button>
-            </div>
-            <!-- Services Grid -->
-            <div id="servicesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
-                @foreach($services as $service)
-                    <a href="/services/{{ $service->id }}" class="service-card {{ $service->type === 'Cleaning' ? 'cleaning' : 'maintenance' }} bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 {{ $service->type !== 'Cleaning' ? 'hidden' : '' }} w-full" style="animation-delay: {{ $loop->index * 0.1 }}s;" data-title="{{ $service->title }}" data-description="{{ $service->description }}">
-                        <div class="relative h-80">
-                            @if($service->image)
-                                <img src="/storage/{{ $service->image }}" class="w-full h-full object-cover" alt="{{ $service->title }}">
-                            @else
-                                <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#36a3dc] to-[#203e78]">
-                                    <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                    </svg>
-                                </div>
-                            @endif
-                            <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
-                                <span class="text-white font-semibold">Learn More</span>
-                            </div>
-                        </div>
-                        <div class="p-6">
-                            <h4 class="text-xl font-semibold text-[#203e78] mb-2">{{ $service->title }}</h4>
-                            <p class="text-gray-600 text-sm" style="line-height: 1.6;">{{ Str::limit($service->description, 80) }}</p>
-                        </div>
-                    </a>
-                @endforeach
-            </div>
-            <div class="text-center mt-12">
-                <a href="/services" class="inline-block px-8 py-4 bg-[#36a3dc] text-white font-semibold text-lg rounded-full shadow-lg hover:bg-[#2b8cc4] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300 animate-pulse">View All Services</a>
-            </div>
+        <!-- Tabs -->
+        <div class="flex justify-center mb-8 space-x-4" role="tablist">
+            <button id="cleaningTab" class="px-8 py-3 text-lg font-semibold text-[#203e78] bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300" role="tab" aria-selected="true" aria-controls="cleaning-panel">Cleaning</button>
+            <button id="maintenanceTab" class="px-8 py-3 text-lg font-semibold text-[#203e78] bg-white rounded-full shadow-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300" role="tab" aria-selected="false" aria-controls="maintenance-panel">Maintenance</button>
         </div>
-    </section>
+        <!-- Services Grid -->
+        <div id="servicesGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 animate-fade-in-up" style="animation-delay: 0.4s;">
+            @foreach($services as $service)
+                <div class="service-card {{ $service->type === 'Cleaning' ? 'cleaning' : 'maintenance' }} bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 hover:shadow-2xl transition-all duration-500 {{ $service->type !== 'Cleaning' ? 'hidden' : '' }} w-full" style="animation-delay: {{ $loop->index * 0.1 }}s;" data-title="{{ $service->title }}" data-description="{{ $service->description }}">
+                    <div class="relative h-80">
+                        @if($service->image)
+                            <img src="/storage/{{ $service->image }}" class="w-full h-full object-cover" alt="{{ $service->title }}">
+                        @else
+                            <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#36a3dc] to-[#203e78]">
+                                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                            </div>
+                        @endif
+                        <div class="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center opacity-0 hover:opacity-100">
+                            <span class="text-white font-semibold">Learn More</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h4 class="text-xl font-semibold text-[#203e78] mb-2">{{ $service->title }}</h4>
+                        <p class="text-gray-600 text-sm" style="line-height: 1.6;">{{ Str::limit($service->description, 80) }}</p>
+                        <a href="/services/{{ $service->id }}" class="inline-block mt-4 px-4 py-2 bg-[#36a3dc] text-white font-semibold text-sm rounded-lg hover:bg-[#2b8cc4] transition-all duration-300">View Details</a>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <div class="text-center mt-12">
+            <a href="/services" class="inline-block px-8 py-4 bg-[#36a3dc] text-white font-semibold text-lg rounded-full shadow-lg hover:bg-[#2b8cc4] hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#36a3dc] transition-all duration-300 animate-pulse">View All Services</a>
+        </div>
+    </div>
+</section>
 
         <!-- Tagline + CTA Block -->
     <section class="text-center py-16 px-4 sm:px-6 lg:px-8 mb-12 bg-[#f8fafc]" role="region" aria-label="Tagline Section">
@@ -282,115 +283,7 @@
 
     <!-- Testimonials -->
 <!-- Testimonials -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 mb-12" role="region" aria-label="Testimonials Section">
-        <h3 class="text-3xl md:text-4xl font-bold text-center text-[#203e78] mb-8">What Our Clients Say</h3>
-        <div class="relative max-w-7xl mx-auto" style="padding-left: 40px; padding-right: 40px;">
-            <div class="relative overflow-hidden">
-                <div id="testimonial-container" class="grid grid-cols-1 sm:grid-cols-2 gap-6 transition-all duration-500 ease-in-out">
-                    @forelse($reviews->where('status', 1) as $index => $review)
-                        <div class="testimonial-slide {{ $index < 2 ? '' : 'hidden' }} bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300" style="background: linear-gradient(145deg, #ffffff, #f1f5f9);">
-                            <div class="flex items-center mb-4">
-                                @for ($i = 0; $i < $review->rating; $i++)
-                                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.15c.969 0 1.371 1.24.588 1.81l-3.357 2.44a1 1 0 00-.364 1.118l1.287 3.97c.3.921-.755 1.688-1.54 1.118l-3.357-2.44a1 1 0 00-1.175 0l3.357 2.44c-.784.57-1.838-.197-1.54-1.118l1.287-3.97a1 1 0 00-.364-1.118L2.85 9.397c-.783-.57-.38-1.81.588-1.81h4.15a1 1 0 00.95-.69l1.286-3.97z"/>
-                                    </svg>
-                                @endfor
-                                @for ($i = $review->rating; $i < 5; $i++)
-                                    <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.97a1 1 0 00.95.69h4.15c.969 0 1.371 1.24.588 1.81l-3.357 2.44a1 1 0 00-.364 1.118l1.287 3.97c.3.921-.755 1.688-1.54 1.118l-3.357-2.44a1 1 0 00-1.175 0l-3.357 2.44c-.784.57-1.838-.197-1.54-1.118l1.287-3.97a1 1 0 00-.364-1.118L2.85 9.397c-.783-.57-.38-1.81.588-1.81h4.15a1 1 0 00.95-.69l1.286-3.97z"/>
-                                    </svg>
-                                @endfor
-                            </div>
-                            <p class="text-gray-600 italic" style="line-height: 1.6;">“{{ $review->comment }}”</p>
-                            <p class="mt-4 text-[#203e78] font-semibold">{{ $review->user->name }}, {{ $review->user->email }}</p>
-                        </div>
-                    @empty
-                        <div class="bg-white p-6 rounded-lg shadow-md" style="background: linear-gradient(145deg, #ffffff, #f1f5f9);">
-                            <p class="text-gray-600 italic" style="line-height: 1.6;">No active reviews available yet.</p>
-                        </div>
-                    @endforelse
-                </div>
-            </div>
-            <!-- Navigation Buttons -->
-            <button id="prevTestimonial" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-[#36a3dc] text-white p-2 rounded-full hover:bg-[#2b8cc4] transition-colors duration-300 z-10" style="width: 40px; height: 40px; left: -30px;">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                </svg>
-            </button>
-            <button id="nextTestimonial" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-[#36a3dc] text-white p-2 rounded-full hover:bg-[#2b8cc4] transition-colors duration-300 z-10" style="width: 40px; height: 40px; right: -30px;">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                </svg>
-            </button>
-        </div>
-        <!-- JavaScript for Testimonials Sliding -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                const slides = document.querySelectorAll('.testimonial-slide');
-                let currentIndex = 0;
-                const slidesPerView = 2;
-                const totalSlides = Math.ceil(slides.length / slidesPerView);
-                const animationDuration = 500; // Duration in milliseconds for the animation
-
-                if (slides.length > 0) {
-                    // Initial setup with animation
-                    slides.forEach(slide => {
-                        slide.style.transition = `opacity ${animationDuration}ms ease-in-out, transform ${animationDuration}ms ease-in-out`;
-                        slide.classList.add('hidden');
-                    });
-                    for (let i = 0; i < Math.min(slidesPerView, slides.length); i++) {
-                        slides[i].classList.remove('hidden');
-                        slides[i].style.opacity = 1;
-                    }
-
-                    document.getElementById('prevTestimonial').addEventListener('click', () => {
-                        if (currentIndex > 0) {
-                            animateSlideChange(currentIndex, currentIndex - 1);
-                            currentIndex--;
-                        }
-                    });
-
-                    document.getElementById('nextTestimonial').addEventListener('click', () => {
-                        if (currentIndex < totalSlides - 1) {
-                            animateSlideChange(currentIndex, currentIndex + 1);
-                            currentIndex++;
-                        }
-                    });
-                }
-
-                function animateSlideChange(oldIndex, newIndex) {
-                    // Fade out current slides
-                    const startIndex = oldIndex * slidesPerView;
-                    const endIndex = Math.min(startIndex + slidesPerView, slides.length);
-                    for (let i = startIndex; i < endIndex; i++) {
-                        slides[i].style.opacity = 0;
-                        slides[i].style.transform = 'translateX(20px)';
-                    }
-
-                    // Delay to allow fade out
-                    setTimeout(() => {
-                        updateSlides(newIndex);
-                        // Fade in new slides
-                        const newStartIndex = newIndex * slidesPerView;
-                        const newEndIndex = Math.min(newStartIndex + slidesPerView, slides.length);
-                        for (let i = newStartIndex; i < newEndIndex; i++) {
-                            slides[i].style.opacity = 1;
-                            slides[i].style.transform = 'translateX(0)';
-                        }
-                    }, animationDuration / 2);
-                }
-
-                function updateSlides(index) {
-                    slides.forEach(slide => slide.classList.add('hidden'));
-                    const startIndex = index * slidesPerView;
-                    const endIndex = Math.min(startIndex + slidesPerView, slides.length);
-                    for (let i = startIndex; i < endIndex; i++) {
-                        slides[i].classList.remove('hidden');
-                    }
-                }
-            });
-        </script>
-    </section>
+    
     <!-- Back to Top Button -->
     <button id="back-to-top" class="fixed bottom-8 right-8 bg-[#36a3dc] text-white p-3 rounded-full shadow-lg hover:bg-[#203e78] transition-colors duration-300 hidden" aria-label="Back to Top">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
