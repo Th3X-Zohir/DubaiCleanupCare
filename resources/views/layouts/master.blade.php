@@ -9,6 +9,16 @@
     <meta name="keywords" content="cleaning services Dubai, deep cleaning Dubai, home cleaning Dubai, office cleaning Dubai, eco-friendly cleaning UAE, maintenance services Dubai" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://www.dubaicleanupcare.com/" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17420400154">
+    </script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17420400154');
+    </script>
     <!-- Organization & Website Schema for sitelinks -->
     <!-- Organization Schema -->
     <script type="application/ld+json">
