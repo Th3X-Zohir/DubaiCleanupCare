@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('title', $service->title . ' | Dubai Cleanup & Maintenance')
-
+@section('head')
+    <link rel="canonical" href="https://www.dubaicleanupcare.com/services/{{ $service->id }}" />
+@endsection
 @section('full-width-content')
     @php
         $whatsapp_number = '+971522515407';

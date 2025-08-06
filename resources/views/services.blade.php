@@ -1,7 +1,9 @@
 @extends('layouts.master')
 
 @section('title', 'Our Services | Dubai Cleanup & Maintenance')
-
+@section('head')
+    <link rel="canonical" href="https://www.dubaicleanupcare.com/services" />
+@endsection
 @section('full-width-content')
     <section class="relative bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] overflow-hidden" role="region" aria-label="Services Page">
         <!-- Hero Banner with Crystal Text Effect -->
