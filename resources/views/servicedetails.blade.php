@@ -2,7 +2,7 @@
 
 @section('title', $service->title . ' | Dubai Cleanup & Maintenance')
 @section('head')
-    <link rel="canonical" href="https://www.dubaicleanupcare.com/services/{{ $service->id }}" />
+    <link rel="canonical" href="https://dubaicleanupcare.com/services/{{ $service->id }}" />
 @endsection
 @section('full-width-content')
     @php
