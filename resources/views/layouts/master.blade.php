@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@yield('title', 'Best Cleaning Services in Dubai | Eco-Friendly Home & Office Cleaning - Dubai Cleanup & Maintenance')</title>
     <link rel="icon" type="image/png" href="https://dubaicleanupcare.com/assets/logo/logo.png">
-    <meta name="description" content="Best cleaning service in Dubai. Affordable home & office cleaning in Dubai City, JBR, and more. Call +971522515407 to book now!" />
     <meta name="keywords" content="cleaning services Dubai, deep cleaning Dubai, home cleaning Dubai, office cleaning Dubai, eco-friendly cleaning UAE, maintenance services Dubai" />
     <meta name="robots" content="index, follow" />
     @yield('head')
