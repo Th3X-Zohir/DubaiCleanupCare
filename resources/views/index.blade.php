@@ -1,7 +1,10 @@
 @extends('layouts.master')
 
 @section('title', 'Home - Dubai Cleanup & Maintenance')
-
+@section('head')
+    <link rel="canonical" href="https://dubaicleanupcare.com/" />
+    <meta name="description" content="Best cleaning service in Dubai. Affordable home & office cleaning in Dubai Marina, JBR, and more. Call +971522515407 to book now!" />
+@endsection
 @section('full-width-content')
 <!-- Hero Section -->
 <!-- Hero Section -->

@@ -8,7 +8,7 @@
     <meta name="description" content="Best cleaning service in Dubai. Affordable home & office cleaning in Dubai City, JBR, and more. Call +971522515407 to book now!" />
     <meta name="keywords" content="cleaning services Dubai, deep cleaning Dubai, home cleaning Dubai, office cleaning Dubai, eco-friendly cleaning UAE, maintenance services Dubai" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://dubaicleanupcare.com/" />
+    @yield('head')
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17420400154">
     </script>
@@ -69,7 +69,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    @yield('head')
+    
     <style>
         /* Custom subtle scrollbar */
         ::-webkit-scrollbar {

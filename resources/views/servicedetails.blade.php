@@ -3,6 +3,7 @@
 @section('title', $service->title . ' | Dubai Cleanup & Maintenance')
 @section('head')
     <link rel="canonical" href="https://dubaicleanupcare.com/services/{{ $service->id }}" />
+    <meta name="description" content="Best cleaning service in Dubai: {{ Str::limit($service->title, 80) }}. Affordable, reliable cleaning in Dubai Marina, JBR, and more." />
 @endsection
 @section('full-width-content')
     @php
