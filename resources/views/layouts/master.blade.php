@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@yield('title', 'Best Cleaning Services in Dubai | Eco-Friendly Home & Office Cleaning - Dubai Cleanup & Maintenance')</title>
-    <link rel="icon" type="image/png" href="https://www.dubaicleanupcare.com/assets/logo/logo.png">
+    <link rel="icon" type="image/png" href="https://dubaicleanupcare.com/assets/logo/logo.png">
     <meta name="description" content="Discover top-rated cleaning services in Dubai. Eco-friendly, affordable, and reliable home & office cleaning in Dubai Marina, JBR, and beyond. Book same-day service now for spotless results." />
     <meta name="keywords" content="cleaning services Dubai, deep cleaning Dubai, home cleaning Dubai, office cleaning Dubai, eco-friendly cleaning UAE, maintenance services Dubai" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.dubaicleanupcare.com/" />
+    <link rel="canonical" href="https://dubaicleanupcare.com/" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17420400154">
     </script>
@@ -26,8 +26,8 @@
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Dubai Cleanup & Maintenance",
-    "url": "https://www.dubaicleanupcare.com",
-    "logo": "https://www.dubaicleanupcare.com/assets/logo/logo.png",
+    "url": "https://dubaicleanupcare.com",
+    "logo": "https://dubaicleanupcare.com/assets/logo/logo.png",
     "contactPoint": [{
         "@type": "ContactPoint",
         "telephone": "+971522515407",
