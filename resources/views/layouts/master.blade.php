@@ -294,7 +294,7 @@
         </svg>
         <span class="text-xs font-bold mt-1 group-hover:text-[#ffd700] transition-colors duration-300 relative z-10">WhatsApp</span>
     </a>
-    <a href="/booking" class="group flex flex-col items-center text-white hover:scale-115 transition-all duration-300 ease-in-out relative" aria-label="Chat with Us">
+    <a href="https://tawk.to/chat/68938ae6171f1719311eaebc/1j205d5r0" class="group flex flex-col items-center text-white hover:scale-115 transition-all duration-300 ease-in-out relative" aria-label="Chat with Us">
         <div class="absolute inset-0 bg-white/10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         <svg class="w-7 h-7 stroke-white group-hover:stroke-[#ffd700] transition-colors duration-300 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
