@@ -1,7 +1,11 @@
 @extends('layouts.master')
 
 @section('title', 'Book a Service | Dubai Cleanup & Maintenance')
-
+@section('head')
+    <link rel="canonical" href="https://dubaicleanupcare.com/booking" />
+    <meta name="description" content="Book the best cleaning service in Dubai. Schedule affordable home & office cleaning in Dubai Marina, JBR, and more. Call +971522515407 now!" />
+    <meta property="og:url" content="https://dubaicleanupcare.com/booking" />
+@endsection
 @section('full-width-content')
     <section class="relative bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] overflow-hidden" role="region" aria-label="Booking Page">
         <!-- Hero Banner with Crystal Text Effect -->

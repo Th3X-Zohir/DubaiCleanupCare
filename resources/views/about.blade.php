@@ -1,7 +1,11 @@
 @extends('layouts.master')
 
 @section('title', 'About Us | Dubai Cleanup & Maintenance')
-
+@section('head')
+    <link rel="canonical" href="https://dubaicleanupcare.com/about" />
+    <meta name="description" content="Learn about Dubai Cleanup & Maintenance, the best cleaning service in Dubai. Trusted for affordable home & office cleaning in Dubai Marina, JBR, and more." />
+    <meta property="og:url" content="https://dubaicleanupcare.com/about" />
+@endsection
 @section('full-width-content')
     <section class="relative bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] overflow-hidden" role="region" aria-label="About Us Page">
         <!-- Hero Banner with Crystal Text Effect -->

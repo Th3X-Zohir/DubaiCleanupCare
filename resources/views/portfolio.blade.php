@@ -1,7 +1,11 @@
 @extends('layouts.master')
 
 @section('title', 'Portfolio | Dubai Cleanup & Maintenance')
-
+@section('head')
+    <link rel="canonical" href="https://dubaicleanupcare.com/portfolio" />
+    <meta name="description" content="View our portfolio of the best cleaning service in Dubai. See our work in home & office cleaning across Dubai Marina, JBR, and more." />
+    <meta property="og:url" content="https://dubaicleanupcare.com/portfolio" />
+@endsection
 @section('full-width-content')
     <section class="relative bg-gradient-to-b from-[#f8fafc] to-[#f1f5f9] overflow-hidden" role="region" aria-label="Portfolio Page">
         <!-- Hero Banner -->

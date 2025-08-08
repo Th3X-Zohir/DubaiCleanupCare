@@ -1,7 +1,11 @@
 @extends('layouts.master')
 
 @section('title', 'Terms and Conditions | Dubai Cleanup & Maintenance')
-
+@section('head')
+    <link rel="canonical" href="https://dubaicleanupcare.com/terms" />
+    <meta name="description" content="Read terms for Dubai Cleanup & Maintenance, the best cleaning service in Dubai. Affordable cleaning in Dubai Marina, JBR, and more." />
+    <meta property="og:url" content="https://dubaicleanupcare.com/terms" />
+@endsection
 @section('full-width-content')
     <section class="relative min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#f8fafc] to-[#e2e8f0] overflow-hidden" role="region" aria-label="Terms and Conditions">
         <!-- Background Decorative Elements -->
